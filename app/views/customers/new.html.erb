@@ -1,0 +1,11 @@
+<% if @customer.errors.any? %>
+  <ul>
+    <% @customer.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<h1>Novo cliente</h1>
+
+<%= render 'form'%>
